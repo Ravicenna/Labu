@@ -38,12 +38,12 @@
     }
 
     .content h1 {
-        font-size: 3rem;
+        font-size: 4rem;
         margin-bottom: 1px;
     }
 
     .content p {
-        font-size: 1.2rem;
+        font-size: 2rem;
     }
 
     .svg-front {
@@ -70,6 +70,7 @@
         transition: 9ms;
         cursor: pointer;
         z-index: 5;
+        font-size: 1.45rem;
     }
 
     .tombolLapor:hover {
@@ -79,7 +80,8 @@
     }
 
     /* end of hero kawan:( */
-    .bd-card {
+    /*readME ;*/
+    .bd-oren {
         background-color: #FF4500;
     }
 
@@ -127,7 +129,8 @@
         transform: scale(1.07);
         /* Zoom pada card */
         background-color: #FF4500;
-        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.7);
+        color: #d3d3d3;
     }
 
     .card:hover .card-image img {
@@ -152,7 +155,7 @@
     </svg>
 </div>
 <!--end hero-->
-<section class="bd-card">
+<section class="bd-oren">
     <div class="container my-4">
         <div class="row g-4">
             <!-- Card siji -->
@@ -161,8 +164,10 @@
                     <img src="https://asset.kompas.com/crops/MDKtGB-Qbs2L0FBC7bOlWcb5VeY=/65x65:865x599/1200x800/data/photo/2017/06/28/1265845835.jpg"
                         class="card-img-top" alt="Card 1">
                     <div class="card-body">
-                        <h5 class="card-title">Judul Card 1</h5>
-                        <p class="card-text">Deskripsi singkat untuk card pertama.</p>
+                        <h5 class="card-title">Laporkan Buku</h5>
+                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet eos illum
+                            ea, praesentium, molestiae amet adipisci maxime sed laboriosam facere accusamus optio
+                            laborum recusandae iusto repellendus aut a non magni.</p>
                     </div>
                 </div>
             </div>
@@ -190,7 +195,61 @@
             </div>
         </div>
     </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#FF4500" fill-opacity="1"
+            d="M0,320L48,320C96,320,192,320,288,320C384,320,480,320,576,320C672,320,768,320,864,320C960,320,1056,320,1152,320C1248,320,1344,320,1392,320L1440,320L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+        </path>
+        <path fill="#ffffff" fill-opacity="1"
+            d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,160C672,171,768,213,864,245.3C960,277,1056,299,1152,282.7C1248,267,1344,213,1392,186.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+        </path>
+    </svg>
 </section>
-
+<section>
+    <h5 class="text-center display-4">Daftar Laporan</h5>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
 <!--https://cdn.antaranews.com/cache/1200x800/2023/03/03/IMG-20230303-WA0014.jpg-->
 <?= $this->include('template/footer'); ?>
