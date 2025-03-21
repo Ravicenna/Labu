@@ -98,7 +98,7 @@
         border-radius: 8px;
         overflow: hidden;
         transition: transform 0.3s ease, background-color 0.3s ease;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
         width: 300px;
         cursor: pointer;
         position: relative;
@@ -215,7 +215,7 @@
 <section>
     <h5 class="display-5 text-center">Daftar Laporan</h5>
     <div class="container">
-        <table class="table">
+        <table class="table table-striped">
             <thead>
                 <tr>
                     <th scope="col">#</th>
