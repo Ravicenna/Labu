@@ -205,7 +205,7 @@
     </svg>
 </section>
 <section>
-    <h5 class="text-center display-4">Daftar Laporan</h5>
+    <h5 class="display-5 text-center">Daftar Laporan</h5>
     <table class="table">
         <thead>
             <tr>
@@ -251,5 +251,8 @@
         </tbody>
     </table>
 </section>
+
+<br>
+<br>
 <!--https://cdn.antaranews.com/cache/1200x800/2023/03/03/IMG-20230303-WA0014.jpg-->
 <?= $this->include('template/footer'); ?>

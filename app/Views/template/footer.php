@@ -1,12 +1,21 @@
-<header class="text-center py-3">
-    <h5>&copy; A11.2023.15287</h5>
+<header>
+    <figure class="text-center">
+        <blockquote class="blockquote">
+            <p>Maklum, manusia tempatnya salah dan dosa, karena bukan Nabi boyyy!</p>
+        </blockquote>
+        <figcaption class="blockquote-footer">
+            Someone famous in <cite title="Source Title">Instagram</cite>
+        </figcaption>
+    </figure>
 </header>
+
 
 <div class="row">
     <div class="col-12 col-md-6 col-lg-4">
         <div class="p-3 bg-light text-center">
             <h3>Card 1</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quibusdam dolorum mollitia quo, sit
+            <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quibusdam
+                dolorum mollitia quo, sit
                 esse quos quisquam numquam amet accusamus alias ab recusandae architecto debitis laborum est doloribus
                 assumenda nisi..</p>
         </div>
@@ -14,7 +23,8 @@
     <div class="col-12 col-md-6 col-lg-4">
         <div class="p-3 bg-light text-center">
             <h3>Card 2</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus quos aperiam corporis, illum officiis
+            <p style="text-align: justify;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus quos aperiam
+                corporis, illum officiis
                 animi ducimus minus eveniet iusto sequi consequuntur omnis atque velit ut fuga repellat fugiat porro
                 facilis..</p>
         </div>
