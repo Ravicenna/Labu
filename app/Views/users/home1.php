@@ -75,8 +75,9 @@
 
     .tombolLapor:hover {
         background-color: rgb(103, 28, 14);
-        transition: all 0.5ms;
+        transition: transform 0.3s ease;
         box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+        transform: scale(1.07);
     }
 
     /* end of hero kawan:( */
@@ -160,38 +161,45 @@
         <div class="row g-4">
             <!-- Card siji -->
             <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="https://asset.kompas.com/crops/MDKtGB-Qbs2L0FBC7bOlWcb5VeY=/65x65:865x599/1200x800/data/photo/2017/06/28/1265845835.jpg"
-                        class="card-img-top" alt="Card 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Laporkan Buku</h5>
-                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet eos illum
-                            ea, praesentium, molestiae amet adipisci maxime sed laboriosam facere accusamus optio
-                            laborum recusandae iusto repellendus aut a non magni.</p>
+                <a href="#" style="text-decoration: none;">
+                    <div class="card h-100">
+                        <img src="https://asset.kompas.com/crops/MDKtGB-Qbs2L0FBC7bOlWcb5VeY=/65x65:865x599/1200x800/data/photo/2017/06/28/1265845835.jpg"
+                            class="card-img-top" alt="Card 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Laporkan Buku</h5>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet eos
+                                illum
+                                ea, praesentium, molestiae amet adipisci maxime sed laboriosam facere accusamus optio
+                                laborum recusandae iusto repellendus aut a non magni.</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <!-- Card loro -->
             <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="https://asset.kompas.com/crops/MDKtGB-Qbs2L0FBC7bOlWcb5VeY=/65x65:865x599/1200x800/data/photo/2017/06/28/1265845835.jpg"
-                        class="card-img-top" alt="Card 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Judul Card 2</h5>
-                        <p class="card-text">Deskripsi singkat untuk card kedua.</p>
+                <a href="#" style="text-decoration: none;">
+                    <div class="card h-100">
+                        <img src="https://asset.kompas.com/crops/MDKtGB-Qbs2L0FBC7bOlWcb5VeY=/65x65:865x599/1200x800/data/photo/2017/06/28/1265845835.jpg"
+                            class="card-img-top" alt="Card 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Judul Card 2</h5>
+                            <p class="card-text">Deskripsi singkat untuk card kedua.</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <!-- Card telu -->
             <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="https://asset.kompas.com/crops/MDKtGB-Qbs2L0FBC7bOlWcb5VeY=/65x65:865x599/1200x800/data/photo/2017/06/28/1265845835.jpg"
-                        class="card-img-top" alt="Card 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Judul Card 3</h5>
-                        <p class="card-text">Deskripsi singkat untuk card ketiga.</p>
+                <a href="#" style="text-decoration: none;">
+                    <div class="card h-100">
+                        <img src="https://asset.kompas.com/crops/MDKtGB-Qbs2L0FBC7bOlWcb5VeY=/65x65:865x599/1200x800/data/photo/2017/06/28/1265845835.jpg"
+                            class="card-img-top" alt="Card 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Judul Card 3</h5>
+                            <p class="card-text">Deskripsi singkat untuk card ketiga.</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </div>
