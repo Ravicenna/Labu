@@ -15,17 +15,13 @@
         /* Tinggi penuh viewport */
         background: url('https://cdn.antaranews.com/cache/1200x800/2023/03/03/IMG-20230303-WA0014.jpg') no-repeat center center;
         background-size: cover;
-        /* Gambar memenuhi area */
     }
 
     /* Div tombol */
     .j-container {
         position: absolute;
-        /* Posisikan tombol di dalam kontainer */
         top: 50%;
-        /* Vertikal: Tengah */
         left: 5%;
-        /* Horizontal: Kiri */
         transform: translateY(-50%);
         /* Pastikan berada di tengah secara vertikal */
     }
@@ -33,20 +29,17 @@
     /* Div teks */
     .content {
         position: absolute;
-        /* Posisi teks di dalam kontainer */
         top: 50%;
-        /* Vertikal: Tengah */
         left: 15%;
-        /* Horizontal: Sebelah kanan tombol */
         transform: translateY(-50%);
         text-align: left;
-        /* Rata kiri untuk teks */
         color: white;
         font-family: Arial, sans-serif;
     }
 
     .content h1 {
         font-size: 3rem;
+        margin-bottom: 1px;
     }
 
     .content p {
@@ -57,12 +50,10 @@
         pointer-events: none;
         position: absolute;
         bottom: 0;
-        /* Tetap di bagian bawah */
         left: 0;
         width: 100%;
         /* SVG memenuhi lebar layar */
         z-index: 2;
-        /* SVG berada di atas gambar */
     }
 
     .tombolLapor {
@@ -86,6 +77,63 @@
         transition: all 0.5ms;
         box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
     }
+
+    /* end of hero kawan:( */
+    .bd-card {
+        background-color: #FF4500;
+    }
+
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .card {
+        background-color: rgb(255, 255, 255);
+        /* Warna latar card */
+        border-radius: 8px;
+        overflow: hidden;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        width: 300px;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .card-image img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+
+    .card-content {
+        padding: 15px;
+    }
+
+    .card-content h3 {
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+        color: #FF6347;
+    }
+
+    .card-content p {
+        font-size: 1rem;
+        color: #d3d3d3;
+    }
+
+    .card:hover {
+        transform: scale(1.07);
+        /* Zoom pada card */
+        background-color: #FF4500;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+    }
+
+    .card:hover .card-image img {
+        transform: scale(1.1);
+        /* Zoom-in pada gambar */
+    }
 </style>
 <div class="full-view-container">
     <div class="full-view-container">
@@ -103,10 +151,46 @@
         </path>
     </svg>
 </div>
+<!--end hero-->
+<section class="bd-card">
+    <div class="container my-4">
+        <div class="row g-4">
+            <!-- Card siji -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://asset.kompas.com/crops/MDKtGB-Qbs2L0FBC7bOlWcb5VeY=/65x65:865x599/1200x800/data/photo/2017/06/28/1265845835.jpg"
+                        class="card-img-top" alt="Card 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Judul Card 1</h5>
+                        <p class="card-text">Deskripsi singkat untuk card pertama.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card loro -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://asset.kompas.com/crops/MDKtGB-Qbs2L0FBC7bOlWcb5VeY=/65x65:865x599/1200x800/data/photo/2017/06/28/1265845835.jpg"
+                        class="card-img-top" alt="Card 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Judul Card 2</h5>
+                        <p class="card-text">Deskripsi singkat untuk card kedua.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card telu -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://asset.kompas.com/crops/MDKtGB-Qbs2L0FBC7bOlWcb5VeY=/65x65:865x599/1200x800/data/photo/2017/06/28/1265845835.jpg"
+                        class="card-img-top" alt="Card 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Judul Card 3</h5>
+                        <p class="card-text">Deskripsi singkat untuk card ketiga.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-
-
-
-
-https://cdn.antaranews.com/cache/1200x800/2023/03/03/IMG-20230303-WA0014.jpg
+<!--https://cdn.antaranews.com/cache/1200x800/2023/03/03/IMG-20230303-WA0014.jpg-->
 <?= $this->include('template/footer'); ?>
