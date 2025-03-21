@@ -21,16 +21,17 @@
     </div>
     <div class="col-12 col-md-12 col-lg-4">
         <div class="p-3 bg-light text-center">
-            <h3>Card 3</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae blanditiis deleniti est. Sint aut
-                molestias placeat, perferendis laborum perspiciatis dolorum accusantium omnis assumenda ipsam quam,
-                inventore dolor blanditiis minima ea?.</p>
+            <h3>Lokasi</h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.225628747562!2d110.406485675715!3d-6.982679393018223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708b4ec52229d7%3A0xc791d6abc9236c7!2sUniversitas%20Dian%20Nuswantoro!5e0!3m2!1sid!2sid!4v1742579995556!5m2!1sid!2sid"
+                width="400" height="120" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
 </div>
 
 <footer class="text-center mt-4 py-3 bg-dark text-white">
-    <p>&copy; 2025 IsraSaqiba || Ravincenna Mahardhika</p>
+    <p>&copy; 2025 IsraSaqiba || RavincennaMahardhika</p>
 </footer>
 </div>
 
