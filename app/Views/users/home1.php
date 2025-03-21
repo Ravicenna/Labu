@@ -1,13 +1,11 @@
 <?= $this->include('template/header'); ?>
 <style>
-    /* Reset margin dan padding */
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
 
-    /* Kontainer Full View */
     .full-view-container {
         position: relative;
         width: 100%;
@@ -17,7 +15,6 @@
         background-size: cover;
     }
 
-    /* Div tombol */
     .j-container {
         position: absolute;
         top: 50%;
@@ -26,7 +23,6 @@
         /* Pastikan berada di tengah secara vertikal */
     }
 
-    /* Div teks */
     .content {
         position: absolute;
         top: 50%;
@@ -128,7 +124,6 @@
 
     .card:hover {
         transform: scale(1.07);
-        /* Zoom pada card */
         background-color: #FF4500;
         box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.7);
         color: #d3d3d3;
@@ -136,7 +131,6 @@
 
     .card:hover .card-image img {
         transform: scale(1.1);
-        /* Zoom-in pada gambar */
     }
 </style>
 <div class="full-view-container">
@@ -225,16 +219,14 @@
                 </tr>
             </thead>
             <tbody>
-                <?php for ($i = 1; $i < 9; $i++) {
-                    echo "<tr>";
-                    echo "<th scope=row>";
-                    echo $i;
-                    echo "</th>";
-                    echo "<td>Mark</td>";
-                    echo "<td>Otto</td>";
-                    echo "<td>@mdo</td>";
-                    echo "</tr>";
-                } ?>
+                <?php for ($i = 1; $i < 9; $i++) { ?>
+                    <tr>
+                        <th scope="row"><?= $i; ?></th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                <?php } ?>
             </tbody>
         </table>
     </div>
