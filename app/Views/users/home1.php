@@ -53,8 +53,8 @@
     }
 
     .tombolLapor {
-        padding-left: 15px;
-        padding-right: 17px;
+        padding-left: 23px;
+        padding-right: 25px;
         padding-top: 5px;
         padding-bottom: 6px;
         background-color: #FF4500;
@@ -73,7 +73,7 @@
         background-color: rgb(103, 28, 14);
         transition: transform 0.3s ease;
         box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
-        transform: scale(1.07);
+        transform: scale(0.89);
     }
 
     /* end of hero kawan:( */
@@ -140,7 +140,7 @@
         <div class="content">
             <h1><b>Selamat Datang</b></h1>
             <p>Website Perpustakaan Laporkan Buku!</p>
-            <button class="tombolLapor">Laporkan!</button>
+            <button class="tombolLapor"><b>Login</b></button>
         </div>
     </div>
     <svg class="svg-front" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -160,8 +160,9 @@
                         <img src="https://asset.kompas.com/crops/MDKtGB-Qbs2L0FBC7bOlWcb5VeY=/65x65:865x599/1200x800/data/photo/2017/06/28/1265845835.jpg"
                             class="card-img-top" alt="Card 1">
                         <div class="card-body">
-                            <h5 class="card-title">Laporkan Buku</h5>
-                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet eos
+                            <h5 class="card-title mb-3 fw-semibold">Laporkan Buku</h5>
+                            <p class="card-text" style="text-align: justify" ;>Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. Eveniet eos
                                 illum
                                 ea, praesentium, molestiae amet adipisci maxime sed laboriosam facere accusamus optio
                                 laborum recusandae iusto repellendus aut a non magni.</p>
@@ -176,7 +177,7 @@
                         <img src="https://asset.kompas.com/crops/MDKtGB-Qbs2L0FBC7bOlWcb5VeY=/65x65:865x599/1200x800/data/photo/2017/06/28/1265845835.jpg"
                             class="card-img-top" alt="Card 2">
                         <div class="card-body">
-                            <h5 class="card-title">Judul Card 2</h5>
+                            <h5 class="card-title mb-3 fw-semibold">Judul Card 2</h5>
                             <p class="card-text">Deskripsi singkat untuk card kedua.</p>
                         </div>
                     </div>
@@ -189,7 +190,7 @@
                         <img src="https://asset.kompas.com/crops/MDKtGB-Qbs2L0FBC7bOlWcb5VeY=/65x65:865x599/1200x800/data/photo/2017/06/28/1265845835.jpg"
                             class="card-img-top" alt="Card 3">
                         <div class="card-body">
-                            <h5 class="card-title">Judul Card 3</h5>
+                            <h5 class="card-title mb-3 fw-semibold">Judul Card 3</h5>
                             <p class="card-text">Deskripsi singkat untuk card ketiga.</p>
                         </div>
                     </div>
@@ -207,8 +208,9 @@
     </svg>
 </section>
 <section>
-    <h5 class="display-5 text-center">Daftar Laporan</h5>
+    <h5 class="display-5 text-center">Daftar Laporan Baru</h5>
     <div class="container">
+        <hr>
         <table class="table table-striped">
             <thead>
                 <tr>
@@ -219,7 +221,7 @@
                 </tr>
             </thead>
             <tbody>
-                <?php for ($i = 1; $i < 9; $i++) { ?>
+                <?php for ($i = 1; $i <= 10; $i++) { ?>
                     <tr>
                         <th scope="row"><?= $i; ?></th>
                         <td>Mark</td>

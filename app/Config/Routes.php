@@ -7,3 +7,5 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/debug', 'debug::debugs');
 $routes->get('/', 'home::index');
+$routes->get('/laporan', 'home::laporan');
+$routes->get('/login', 'home::login');

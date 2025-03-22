@@ -13,20 +13,14 @@
 <div class="row">
     <div class="col-12 col-md-6 col-lg-4">
         <div class="p-3 bg-light text-center">
-            <h3>Card 1</h3>
-            <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quibusdam
-                dolorum mollitia quo, sit
-                esse quos quisquam numquam amet accusamus alias ab recusandae architecto debitis laborum est doloribus
-                assumenda nisi..</p>
+            <h3></h3>
+            <p style="text-align: justify;"></p>
         </div>
     </div>
     <div class="col-12 col-md-6 col-lg-4">
         <div class="p-3 bg-light text-center">
-            <h3>Card 2</h3>
-            <p style="text-align: justify;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus quos aperiam
-                corporis, illum officiis
-                animi ducimus minus eveniet iusto sequi consequuntur omnis atque velit ut fuga repellat fugiat porro
-                facilis..</p>
+            <h3></h3>
+            <p style="text-align: justify;"></p>
         </div>
     </div>
     <div class="col-12 col-md-12 col-lg-4">
