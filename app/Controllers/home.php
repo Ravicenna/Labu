@@ -2,16 +2,24 @@
 
 namespace App\Controllers;
 
+use App\Models\laporanUser;
+
 class home extends BaseController
 {
     public function index()
     {
-        return view('users/home1');
+        $key = new laporanUser();
+        $data = $key->getdata();
+        return view('users/home1', compact('data'));
     }
+
     public function laporan()
     {
-        return view('users/doclaporan');
+        $key = new laporanUser();
+        $data = $key->getdata();
+        return view('users/doclaporan', compact('data'));
     }
+
     public function login()
     {
         return view('users/loginUser');

@@ -152,9 +152,9 @@
 <!--end hero-->
 <section class="bd-oren">
     <div class="container my-4">
-        <div class="row g-4">
+        <div class="row row-cols-1 row-cols-md-3 g-4 align-item-center">
             <!-- Card siji -->
-            <div class="col-md-4">
+            <div class="col">
                 <a href="#" style="text-decoration: none;">
                     <div class="card h-100">
                         <img src="https://asset.kompas.com/crops/MDKtGB-Qbs2L0FBC7bOlWcb5VeY=/65x65:865x599/1200x800/data/photo/2017/06/28/1265845835.jpg"
@@ -171,7 +171,7 @@
                 </a>
             </div>
             <!-- Card loro -->
-            <div class="col-md-4">
+            <div class="col">
                 <a href="#" style="text-decoration: none;">
                     <div class="card h-100">
                         <img src="https://asset.kompas.com/crops/MDKtGB-Qbs2L0FBC7bOlWcb5VeY=/65x65:865x599/1200x800/data/photo/2017/06/28/1265845835.jpg"
@@ -184,7 +184,7 @@
                 </a>
             </div>
             <!-- Card telu -->
-            <div class="col-md-4">
+            <div class="col">
                 <a href="#" style="text-decoration: none;">
                     <div class="card h-100">
                         <img src="https://asset.kompas.com/crops/MDKtGB-Qbs2L0FBC7bOlWcb5VeY=/65x65:865x599/1200x800/data/photo/2017/06/28/1265845835.jpg"
@@ -221,14 +221,14 @@
                 </tr>
             </thead>
             <tbody>
-                <?php for ($i = 1; $i <= 10; $i++) { ?>
+                <?php foreach ($data as $laporan): ?>
                     <tr>
-                        <th scope="row"><?= $i; ?></th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
+                        <td> <?= $laporan['id']; ?></td>
+                        <td><?= $laporan['nama']; ?></td>
+                        <td><?= $laporan['buku']; ?></td>
+                        <td><?= $laporan['jenis']; ?></td>
                     </tr>
-                <?php } ?>
+                <?php endforeach ?>
             </tbody>
         </table>
     </div>

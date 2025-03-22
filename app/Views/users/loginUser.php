@@ -1,7 +1,6 @@
 <?= $this->include('template/header'); ?>
-
-<body>
-    <div class="container mt-5">
+<div class="container bg-light-subtle">
+    <div class="container mt-5 min-vh-100">
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <div class="card">
@@ -33,6 +32,7 @@
             </div>
         </div>
     </div>
+
 
     <!-- Register Modal -->
     <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
@@ -85,30 +85,32 @@
             </div>
         </div>
     </div>
+</div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        function validateForm(formId) {
-            const form = document.getElementById(formId);
-            const inputs = form.querySelectorAll('input');
-            let isValid = true;
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    function validateForm(formId) {
+        const form = document.getElementById(formId);
+        const inputs = form.querySelectorAll('input');
+        let isValid = true;
 
-            inputs.forEach(input => {
-                if (!input.value.trim()) {
-                    isValid = false;
-                }
-            });
-
-            if (!isValid) {
-                const warningModal = new bootstrap.Modal(document.getElementById('warningModal'));
-                warningModal.show();
-            } else {
-                alert('Form submitted successfully!');
+        inputs.forEach(input => {
+            if (!input.value.trim()) {
+                isValid = false;
             }
+        });
+
+        if (!isValid) {
+            const warningModal = new bootstrap.Modal(document.getElementById('warningModal'));
+            warningModal.show();
+        } else {
+            alert('Form submitted successfully!');
         }
-    </script>
-    <br><br>
-    <?= $this->include('template/footer'); ?>
-</body>
+    }
+</script>
+<br><br>
+<footer class="text-center mt-4 py-3 bg-dark text-white">
+    <p>&copy; 2025 IsraSaqiba || RavincennaMahardhika</p>
+</footer>
 
 </html>
