@@ -4,59 +4,34 @@
     <h2><b>DAFTAR LAPORAN</b></h2>
 </header>
 
-<!doctype html>
-<html lang="en">
-
-
-<body>
-
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <main role="main" class="container-fluid">
-
-        <h1>Menampilkan Data Dari Database Codeigniter 4</h1>
-        <hr>
-
-        <table class="table">
-            <tr>
-                <th>NIK</th>
-                <th>Nama</th>
-                <th>Alamat</th>
-                <th>No. Telepon</th>
-                <th>Aksi</th>
-            </tr>
-
-            <?php
-            foreach ($data as $biodata) {
-                ?>
+<div class="container-md">
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
                 <tr>
-                    <td><?php echo $biodata['id'] ?></td>
-                    <td><?php echo $biodata['nama']; ?></td>
-                    <td><?php echo $biodata['email']; ?></td>
-                    <td><?php echo $biodata['foto']; ?></td>
-                    <td>
-                        <a href="#" class="btn btn-info btn-sm btn-edit">Edit</a>
-                        <a href="#" class="btn btn-danger btn-sm btn-delete">Delete</a>
-                    </td>
+                    <th scope="col">#</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Buku</th>
+                    <th scope="col">Masalah</th>
+                    <th scope="col">Bukti</th>
                 </tr>
-                <?php
-            }
-            ?>
+            </thead>
+            <tbody>
+                <?php foreach ($data as $file): ?>
+                    <tr>
+                        <th scope="row"><?= $file['id']; ?></th>
+                        <td colspan="2"><?= $file['email']; ?></td>
+                        <td><?= $file['buku']; ?></td>
+                        <td><?= $file['jenis']; ?></td>
+                        <td><?= $file['foto']; ?></td>
+                    </tr>
+                <?php endforeach ?>
+            </tbody>
         </table>
+    </div>
+</div>
+
+
 </body>
 
 </html>

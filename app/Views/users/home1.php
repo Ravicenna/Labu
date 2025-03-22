@@ -133,22 +133,24 @@
         transform: scale(1.1);
     }
 </style>
-<div class="full-view-container">
+<section class="bd-oren">
     <div class="full-view-container">
-        <div class="j-container">
+        <div class="full-view-container">
+            <div class="j-container">
+            </div>
+            <div class="content">
+                <h1><b>Selamat Datang</b></h1>
+                <p>Website Perpustakaan Laporkan Buku!</p>
+                <a href="<?= base_url('/login'); ?>"><button class="tombolLapor"><b>Login</b></button></a>
+            </div>
         </div>
-        <div class="content">
-            <h1><b>Selamat Datang</b></h1>
-            <p>Website Perpustakaan Laporkan Buku!</p>
-            <button class="tombolLapor"><b>Login</b></button>
-        </div>
+        <svg class="svg-front" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#FF4500" fill-opacity="1"
+                d="M0,224L80,234.7C160,245,320,267,480,282.7C640,299,800,309,960,304C1120,299,1280,277,1360,266.7L1440,256L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+            </path>
+        </svg>
     </div>
-    <svg class="svg-front" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#FF4500" fill-opacity="1"
-            d="M0,224L80,234.7C160,245,320,267,480,282.7C640,299,800,309,960,304C1120,299,1280,277,1360,266.7L1440,256L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
-        </path>
-    </svg>
-</div>
+</section>
 <!--end hero-->
 <section class="bd-oren">
     <div class="container my-4">
@@ -211,27 +213,28 @@
     <h5 class="display-5 text-center">Daftar Laporan Baru</h5>
     <div class="container">
         <hr>
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php foreach ($data as $laporan): ?>
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
                     <tr>
-                        <td> <?= $laporan['id']; ?></td>
-                        <td><?= $laporan['nama']; ?></td>
-                        <td><?= $laporan['buku']; ?></td>
-                        <td><?= $laporan['jenis']; ?></td>
+                        <th scope="col">#</th>
+                        <th scope="col">nama</th>
+                        <th scope="col">Buku</th>
+                        <th scope="col">Masalah</th>
                     </tr>
-                <?php endforeach ?>
-            </tbody>
-        </table>
-    </div>
+                </thead>
+                <tbody>
+                    <?php foreach ($data as $file): ?>
+                        <tr>
+                            <th><?= $file['id']; ?></th>
+                            <td><?= $file['nama']; ?></td>
+                            <td><?= $file['buku']; ?></td>
+                            <td><?= $file['jenis']; ?></td>
+                        </tr>
+                    <?php endforeach ?>
+                </tbody>
+            </table>
+        </div>
 </section>
 
 <br>
