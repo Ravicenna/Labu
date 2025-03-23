@@ -8,5 +8,8 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/debug', 'debug::debugs');
 $routes->get('/', 'home::index');
 $routes->get('/laporan', 'home::laporan');
-$routes->get('/login', 'home::login');
 $routes->get('/admin', 'adminC::index');
+
+$routes->get('/login', 'loginAdmin::index'); // Menampilkan halaman login
+$routes->post('/login/authenticate', 'loginAdmin::authenticate'); // Proses login
+$routes->get('/logout', 'loginAdmin::logout'); // Proses logout

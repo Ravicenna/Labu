@@ -1,11 +1,10 @@
 <?php
+
 namespace App\Controllers;
 
 use App\Models\laporanUser;
-use CodeIgniter\Controller;
-use App\Models\PostModel;
 
-class laporan extends Controller
+class laporan extends BaseController
 {
 
     public function index()

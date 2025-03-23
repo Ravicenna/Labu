@@ -1,37 +1,44 @@
 <?= $this->include('template/header'); ?>
+
+
 <div class="container bg-light-subtle">
-    <div class="container mt-5 min-vh-100">
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="card-header text-center">
-                        <h4>Login</h4>
-                    </div>
-                    <div class="card-body">
-                        <form id="loginForm">
-                            <div class="mb-3">
-                                <label for="loginEmail" class="form-label">Email address</label>
-                                <input type="email" class="form-control" id="loginEmail" placeholder="Enter your email">
-                            </div>
-                            <div class="mb-3">
-                                <label for="loginPassword" class="form-label">Password</label>
-                                <input type="password" class="form-control" id="loginPassword"
-                                    placeholder="Enter your password">
-                            </div>
-                            <div class="d-grid gap-2">
-                                <button type="button" class="btn btn-primary"
-                                    onclick="validateForm('loginForm')">Login</button>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="card-footer text-center">
-                        <small>Don't have an account? <a href="#" data-bs-toggle="modal"
-                                data-bs-target="#registerModal">Register here</a></small>
+    <form action="/login/authenticate" method="post">
+        <div class="container mt-5 min-vh-100">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            <h4>Login</h4>
+                            <?php if (session()->getFlashdata('error')): ?>
+                                <div class="alert alert-danger text-center" role="alert">
+                                    <?= session()->getFlashdata('error'); ?>
+                                </div>
+                            <?php endif; ?>
+                        </div>
+                        <div class="card-body">
+                            <form id="loginForm">
+                                <div class="mb-3">
+                                    <input type="text" id="username" name="username" placeholder="Username"
+                                        class="form-control border-0 border-bottom" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="password" id="password" name="password" placeholder="Password"
+                                        class="form-control border-0 border-bottom" required>
+                                </div>
+                                <div class="d-grid gap-2">
+                                    <button type="submit" class="btn btn-primary">Login</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="card-footer text-center">
+                            <small>Don't have an account? <a href="#" data-bs-toggle="modal"
+                                    data-bs-target="#registerModal">Register here</a></small>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </form>
 
 
     <!-- Register Modal -->

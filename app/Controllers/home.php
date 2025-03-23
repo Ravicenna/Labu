@@ -19,11 +19,4 @@ class home extends BaseController
         $data = $key->getdata();
         return view('users/doclaporan', compact('data'));
     }
-
-    public function login()
-    {
-        return view('users/loginUser');
-    }
 }
-
-
