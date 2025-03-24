@@ -5,6 +5,7 @@ use CodeIgniter\Model;
 
 class laporanUser extends Model
 {
+    protected $allowedFields = ['email', 'buku', 'masalah', 'foto'];
 
     protected $table = 'daftarlaporan';
 

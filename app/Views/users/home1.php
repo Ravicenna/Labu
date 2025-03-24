@@ -219,19 +219,26 @@
                     <tr>
                         <th scope="col">#</th>
                         <th scope="col">nama</th>
+                        <th scope="col">Jenis</th>
                         <th scope="col">Buku</th>
                         <th scope="col">Masalah</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <?php foreach ($data as $file): ?>
+                    <?php
+                    $k = 1;
+                    foreach ($data as $file): ?>
                         <tr>
-                            <th><?= $file['id']; ?></th>
+                            <th scope="row"><?= $k; ?></th>
                             <td><?= $file['nama']; ?></td>
-                            <td><?= $file['buku']; ?></td>
                             <td><?= $file['jenis']; ?></td>
+                            <td><?= $file['buku']; ?></td>
+                            <td><?= $file['masalah']; ?></td>
                         </tr>
-                    <?php endforeach ?>
+                        <?php
+                        $k++;
+                    endforeach; ?>
+
                 </tbody>
             </table>
         </div>

@@ -1,7 +1,7 @@
 <header>
     <figure class="text-center">
         <blockquote class="blockquote">
-            <p>Maklum, manusia tempatnya salah dan dosa, karena bukan Nabi boyyy!</p>
+            <p>Maklum, manusia tempatnya salah dan dosa karena bukan Nabi boyyy!</p>
         </blockquote>
         <figcaption class="blockquote-footer">
             Someone famous in <cite title="Source Title">Instagram</cite>
