@@ -13,7 +13,7 @@
     <nav class="navbar sticky-bottom navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-end" href="#" style="gap: 5px;">
-                <img src="logo.png" alt="Logo" width="45" height="45" class="d-inline-block">
+                <img src="<?= base_url('logo.png'); ?>" alt="Logo" width="45" height="45" class="d-inline-block">
                 <div>
                     <b>Lapor <span>Bu</span></b>
                 </div>
