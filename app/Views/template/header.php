@@ -34,13 +34,13 @@
                         <a class="nav-link" aria-current="page" href="<?= base_url('/'); ?>">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="<?= base_url('/login'); ?>">Login/Daftar</a>
+                        <a class="nav-link" href="<?= base_url('/login'); ?>">DaftarLaporan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="<?= base_url('/laporan'); ?>">Daftar Laporan</a>
+                        <a class="nav-link" href="<?= base_url('/laporan'); ?>">Laporkan!</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        <a class="nav-link disabled" href=" <?= base_url('/'); ?>" aria-disabled="true">Disabled</a>
                     </li>
                 </ul>
             </div>

@@ -6,13 +6,11 @@ use App\Models\laporanUser;
 
 class laporan extends BaseController
 {
-    public function input()
-    {
-        $key = new laporanUser();
-        $data = $key->getdata();
-        return view('users/doclaporan', compact('data'));
-    }
 
+    public function ndelok()
+    {
+        return view('users/doclaporan');
+    }
     public function store()
     {
         $laporanUser = new laporanUser();

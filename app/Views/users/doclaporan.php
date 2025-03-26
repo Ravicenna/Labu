@@ -1,40 +1,9 @@
 <?= $this->include('template/header'); ?>
 
 <header class="fs-xl mt-5 mb-4 text-center">
-    <h2><b>DAFTAR LAPORAN</b></h2>
 </header>
 
-<div class="container-md">
-    <div class="table-responsive">
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th scope="col">No.</th>
-                    <th scope="col">Email</th>
-                    <th scope="col">Buku</th>
-                    <th scope="col">Masalah</th>
-                    <th scope="col">Bukti</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php
-                $k = 1;
-                foreach ($data as $file): ?>
-                    <tr>
-                        <th scope="row"><?= $k; ?></th>
-                        <td><?= $file['email']; ?></td>
-                        <td><?= $file['buku']; ?></td>
-                        <td><?= $file['masalah']; ?></td>
-                        <td><?= $file['foto']; ?></td>
-                    </tr>
-                    <?php
-                    $k++;
-                endforeach; ?>
-            </tbody>
-        </table>
-    </div>
-</div>
-<header class="fs-xl mt-5 mb-4 text-center">
+<header class="fs-xl mt-5 mb-4 text-center mb-5">
     <h2><b>Input Data Laporan</b></h2>
 </header>
 <div class="container-md">
@@ -54,11 +23,11 @@
                 return true;
             }
         </script>
-        <div class="mb-3">
+        <div class="input-group mb-3">
             <input type="email" class="form-control" id="email" name="email" required placeholder="email">
-        </div>
-        <div class="mb-2">
-            <input type="text" class="form-control" id="nama" name="nama" required placeholder="nama">
+            <span class="input-group-text">@</span>
+            <input type="text" class="form-control" id="nama" name="nama" required placeholder="nama"
+                aria-label="Server">
         </div>
         <div class="mb-1">
             <input type="text" class="form-control" id="buku" name="buku" required placeholder="buku">
@@ -72,7 +41,33 @@
         <div class="mb-1">
             <input type="file" class="form-control" id="bukti" name="bukti" required>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <div style="display: flex; justify-content: center;">
+            <button type="submit" class="tombolKirim">Kirim!</button>
+        </div>
+        <style>
+            .tombolKirim {
+                padding-left: 43px;
+                padding-right: 43px;
+                padding-top: 7px;
+                padding-bottom: 7px;
+                background-color: #FF4500;
+                color: floralwhite;
+                border-radius: 6px;
+                border-color: #FF4500;
+                align-content: center;
+                align-items: center;
+                margin-bottom: 30px;
+                margin-top: 9px;
+            }
+
+            .tombolKirim:hover {
+                border-color: rgb(103, 28, 14);
+                background-color: rgb(103, 28, 14);
+                transition: transform 0.3s ease;
+                box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+                transform: scale(0.89);
+            }
+        </style>
     </form>
 </div>
 

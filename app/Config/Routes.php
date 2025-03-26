@@ -7,7 +7,8 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/debug', 'debug::debugs');
 $routes->get('/', 'home::index');
-$routes->get('/laporan', 'laporan::input');
+$routes->get('/draflapor', 'showLaporan::index');
+$routes->get('/laporan', 'laporan::ndelok');
 $routes->get('/admin', 'adminC::index');
 $routes->get('/admin/homeAdmin', 'adminC::index'); // Added route for admin home
 $routes->get('/login', 'loginAdmin::index'); // Menampilkan halaman login

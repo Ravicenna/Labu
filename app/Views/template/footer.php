@@ -12,21 +12,20 @@
 <br>
 <div class="row">
     <div class="col-12 col-md-6 col-lg-4">
-        <div class="p-3 bg-light text-center">
+        <div class="p-3 text-center">
             <p style="text-align: center;">
-                UNIVERSITAS DIAN NUSWANTORO
+                <b>UNIVERSITAS DIAN NUSWANTORO</b> <br> Pemograman Web Lanjut Framework CodeIgniter4//Bs5//2025
             </p>
-            <p style="text-align: center;">pemograman web lanjut</p>
         </div>
     </div>
     <div class="col-12 col-md-6 col-lg-4">
-        <div class="p-3 bg-light text-center">
+        <div class="p-3 text-center">
             <h3></h3>
             <p style="text-align: justify;"></p>
         </div>
     </div>
     <div class="col-12 col-md-12 col-lg-4">
-        <div class="p-3 bg-light text-center">
+        <div class="p-3 text-center">
             <img src="<?= base_url('logodinus.png'); ?>" alt="Logo" width="180" height="65" class="d-inline-block">
         </div>
     </div>
