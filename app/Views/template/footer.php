@@ -8,13 +8,15 @@
         </figcaption>
     </figure>
 </header>
-
-
+<br>
+<br>
 <div class="row">
     <div class="col-12 col-md-6 col-lg-4">
         <div class="p-3 bg-light text-center">
-            <h3></h3>
-            <p style="text-align: justify;"></p>
+            <p style="text-align: center;">
+                UNIVERSITAS DIAN NUSWANTORO
+            </p>
+            <p style="text-align: center;">pemograman web lanjut</p>
         </div>
     </div>
     <div class="col-12 col-md-6 col-lg-4">
@@ -25,18 +27,13 @@
     </div>
     <div class="col-12 col-md-12 col-lg-4">
         <div class="p-3 bg-light text-center">
-            <h3>Lokasi</h3>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.225628747562!2d110.406485675715!3d-6.982679393018223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708b4ec52229d7%3A0xc791d6abc9236c7!2sUniversitas%20Dian%20Nuswantoro!5e0!3m2!1sid!2sid!4v1742579995556!5m2!1sid!2sid"
-                width="400" height="120" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <img src="<?= base_url('logodinus.png'); ?>" alt="Logo" width="180" height="65" class="d-inline-block">
         </div>
     </div>
-</div>
 
-<footer class="text-center mt-4 py-3 bg-dark text-white">
-    <p>&copy; 2025 IsraSaqiba || RavincennaMahardhika</p>
-</footer>
+    <footer class="text-center mt-4 py-3 bg-dark text-white">
+        <p>&copy; 2025 IsraSaqiba || RavicennaMahardhika</p>
+    </footer>
 </div>
 
 
