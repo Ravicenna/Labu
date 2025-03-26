@@ -1,7 +1,7 @@
 <?= $this->include('template/header'); ?>
 
 <header class="fs-xl mt-5 mb-4 text-center">
-    <h2><b>DAFTAR LAPORAN</b></h2>
+    <h2><b>DAFTAR LAPORAN pppppp</b></h2>
 </header>
 
 <div class="container-md">
