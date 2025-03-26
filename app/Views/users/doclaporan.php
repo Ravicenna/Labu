@@ -1,14 +1,11 @@
 <?= $this->include('template/header'); ?>
 
 <header class="fs-xl mt-5 mb-4 text-center">
-</header>
-
-<header class="fs-xl mt-5 mb-4 text-center mb-5">
-    <h2><b>Input Data Laporan</b></h2>
+    <h2><b>FORM LAPORAN</b></h2>
 </header>
 <div class="container-md">
     <!--Modal-->
-    <form action="/laporan/store" method="post" onsubmit="return validateEmail()">
+    <form action="/laporan/store" method="post" onsubmit="return validateEmail()" enctype="multipart/form-data">
         <div id="emailAlert" class="alert alert-danger" style="display:none;"></div>
         <script>
             function validateEmail() {
@@ -30,16 +27,22 @@
                 aria-label="Server">
         </div>
         <div class="mb-1">
-            <input type="text" class="form-control" id="buku" name="buku" required placeholder="buku">
+            <input type="text" class="form-control" id="buku" name="buku" required
+                placeholder="buku(jika bukan buku isi dengan ' - ')">
         </div>
         <div class="mb-1">
-            <input type="text" class="form-control" id="jenis" name="jenis" required placeholder="jenis keluhan">
+            <select class="form-select" id="jenisMasalah" name="jenis">
+                <option value="" disabled selected>Jenis :</option>
+                <option value="rusak">Rusak</option>
+                <option value="fasilitas">Fasilitas</option>
+                <option value="hoax">Hoax</option>
+            </select>
         </div>
         <div class="mb-1">
             <textarea class="form-control" id="masalah" name="masalah" required placeholder="masalah"></textarea>
         </div>
-        <div class="mb-1">
-            <input type="file" class="form-control" id="bukti" name="bukti" required>
+        <div>
+            <input type="file" name="image" id="image" accept="image/*" required>
         </div>
         <div style="display: flex; justify-content: center;">
             <button type="submit" class="tombolKirim">Kirim!</button>

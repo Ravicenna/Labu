@@ -17,3 +17,4 @@ $routes->get('/input-data', 'laporan::input'); // Route for input data
 $routes->post('/laporan/store', 'laporan::store'); // Route for storing input data
 $routes->post('/laporan/delete/(:num)', 'home::delete/$1'); // Route for deleting a record
 $routes->get('/logout', 'loginAdmin::logout'); // Proses logout
+$routes->post('/file/upload', 'FileController::upload');

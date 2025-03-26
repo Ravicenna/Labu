@@ -11,10 +11,11 @@
                 <tr>
                     <th scope="col">Id</th>
                     <th scope="col">Email</th>
+                    <th scope="col">Nama</th>
                     <th scope="col">Buku</th>
                     <th scope="col">Masalah</th>
                     <th scope="col">Bukti</th>
-                    <th scope="col">Actions</th>
+                    <th scope="col" class="text-center">TimeStamp</th>
                 </tr>
             </thead>
             <tbody>
@@ -22,9 +23,11 @@
                     <tr>
                         <th scope="row"><?= $file['id']; ?></th>
                         <td><?= $file['email']; ?></td>
+                        <td><?= $file['nama']; ?></td>
                         <td><?= $file['buku']; ?></td>
                         <td><?= $file['masalah']; ?></td>
-                        <td><?= $file['foto']; ?></td>
+                        <td><img src="<?= base_url($file['foto']) ?>" alt="" height="90px" width="80px"></td>
+                        <td class="text-center"><?= $file['created']; ?></td>
                         <td>
                             <form action="/laporan/delete/<?= $file['id']; ?>" method="post" style="display:inline;">
                                 <button type="submit" class="btn btn-danger">Delete</button>
@@ -36,5 +39,6 @@
         </table>
     </div>
 </div>
+
 
 <?= $this->include('template/footer'); ?>

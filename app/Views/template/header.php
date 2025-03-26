@@ -34,7 +34,7 @@
                         <a class="nav-link" aria-current="page" href="<?= base_url('/'); ?>">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="<?= base_url('/login'); ?>">DaftarLaporan</a>
+                        <a class="nav-link" href="<?= base_url('/draflapor'); ?>">DaftarLaporan</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="<?= base_url('/laporan'); ?>">Laporkan!</a>

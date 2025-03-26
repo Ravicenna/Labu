@@ -8,7 +8,7 @@ class home extends BaseController
 {
     public function index(): string
     {
-        /*tabel data*/
+        /*iki tabel data*/
         $key = new laporanUser();
         $data = $key->getdata();
         return view('users/home1', compact('data'));
