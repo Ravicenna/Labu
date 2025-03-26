@@ -38,6 +38,7 @@
     <h2><b>Input Data Laporan</b></h2>
 </header>
 <div class="container-md">
+    <!--Modal-->
     <form action="/laporan/store" method="post" onsubmit="return validateEmail()">
         <div id="emailAlert" class="alert alert-danger" style="display:none;"></div>
         <script>
@@ -56,13 +57,19 @@
         <div class="mb-3">
             <input type="email" class="form-control" id="email" name="email" required placeholder="email">
         </div>
-        <div class="mb-3">
+        <div class="mb-2">
+            <input type="text" class="form-control" id="nama" name="nama" required placeholder="nama">
+        </div>
+        <div class="mb-1">
             <input type="text" class="form-control" id="buku" name="buku" required placeholder="buku">
         </div>
-        <div class="mb-3">
+        <div class="mb-1">
+            <input type="text" class="form-control" id="jenis" name="jenis" required placeholder="jenis keluhan">
+        </div>
+        <div class="mb-1">
             <textarea class="form-control" id="masalah" name="masalah" required placeholder="masalah"></textarea>
         </div>
-        <div class="mb-3">
+        <div class="mb-1">
             <input type="file" class="form-control" id="bukti" name="bukti" required>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>

@@ -16,11 +16,11 @@ class laporan extends BaseController
     public function store()
     {
         $laporanUser = new laporanUser();
-        log_message('debug', 'Request data: ' . json_encode($this->request->getPost()));
-        log_message('debug', 'File data: ' . json_encode($this->request->getFile('bukti')));
         $data = [
             'email' => $this->request->getPost('email'),
+            'nama' => $this->request->getPost('nama'),
             'buku' => $this->request->getPost('buku'),
+            'jenis' => $this->request->getPost('jenis'),
             'masalah' => $this->request->getPost('masalah'),
             'foto' => $this->request->getFile('bukti') ? $this->request->getFile('bukti')->store('uploads') : null
         ];
